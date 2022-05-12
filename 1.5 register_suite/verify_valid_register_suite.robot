@@ -6,7 +6,7 @@ Documentation       This suite will handle the account creation details
 Resource       ../1.1 resource//common_functionality.resource
 
 Test Setup      Link Browser
-Test Teardown       Close Browser
+
 
 *** Test Cases ***
 Create New Account Test
