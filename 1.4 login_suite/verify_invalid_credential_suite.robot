@@ -10,7 +10,8 @@ Test Template      inValid Credential Template
 
 
 *** Test Cases ***
-TC1   gdivya08@gmail.com   srec    valid credentials
+TC1   gdivya08@gmail.com   srec    invalid credentials
+TC2   gdivya@gmail.com     divya   invalid credentials
 
 *** Keywords ***
  InValid Credential Template
