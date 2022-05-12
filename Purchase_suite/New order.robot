@@ -7,6 +7,7 @@ Resource        ../1.1 resource//common_functionality.resource
 
 
 Test Setup      Link Browser
+Test Teardown   Close Browser
 
 
 *** Test Cases ***
@@ -21,6 +22,8 @@ TC4
 TC2
      Click Element    xpath=//span[text()="Product Range"]
      Click Element    xpath=//img[@alt='Dinner Set 36 Pcs. (Square)']
+     Click Element   xpath=//span[contains(text(),'Add to Cart')]
+    Select From List By Label    id=attribute93  Maroon
 
 
 
