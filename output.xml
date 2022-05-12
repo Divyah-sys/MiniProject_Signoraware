@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220511 15:20:26.726" rpa="false" schemaversion="3">
+<suite id="s1" name="Verify Valid Register Suite" source="C:\Users\admin\Desktop\pythonProject\1.5 register_suite\verify_valid_register_suite.robot">
+<test id="s1-t1" name="TC1" line="6">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<arg>path</arg>
+<arg>${EXECDIR}${/}Driver</arg>
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<msg timestamp="20220511 15:20:31.709" level="INFO">Environment variable 'path' set to value 'C:\Python\Divya\Scripts\;C:\Python\Divya\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files\Git\cmd;C:\MinGW\bin;C;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm 2021.3.2\bin;;C:\Users\admin\Desktop\pythonProject\Driver'.</msg>
+<status status="PASS" starttime="20220511 15:20:31.708" endtime="20220511 15:20:31.710"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://signoraware.com/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220511 15:20:31.712" level="INFO">Opening browser 'chrome' to base url 'https://signoraware.com/'.</msg>
+<status status="PASS" starttime="20220511 15:20:31.711" endtime="20220511 15:21:17.277"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Sign In')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220511 15:21:17.280" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign In')]'.</msg>
+<status status="PASS" starttime="20220511 15:21:17.279" endtime="20220511 15:21:20.634"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=email</arg>
+<arg>gdivya0809@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220511 15:21:20.648" level="INFO">Typing text 'gdivya0809@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20220511 15:21:20.646" endtime="20220511 15:21:21.377"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=pass</arg>
+<arg>Srec@123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220511 15:21:21.378" level="INFO">Typing password into text field 'id=pass'.</msg>
+<msg timestamp="20220511 15:21:21.438" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220511 15:21:21.562" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220511 15:21:21.377" endtime="20220511 15:21:21.562"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[text()='Sign In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220511 15:21:21.563" level="INFO">Clicking element 'xpath=//span[text()='Sign In']'.</msg>
+<status status="PASS" starttime="20220511 15:21:21.563" endtime="20220511 15:21:26.022"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[@id='sidebar-button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220511 15:21:26.046" level="INFO">Clicking element 'xpath=//a[@id='sidebar-button']'.</msg>
+<msg timestamp="20220511 15:21:26.957" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220511 15:21:26.959" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=101.0.4951.54)
+</msg>
+<status status="FAIL" starttime="20220511 15:21:26.045" endtime="20220511 15:21:27.887"/>
+</kw>
+<status status="FAIL" starttime="20220511 15:20:31.701" endtime="20220511 15:21:27.892">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=101.0.4951.54)
+</status>
+</test>
+<status status="FAIL" starttime="20220511 15:20:26.770" endtime="20220511 15:21:27.900"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Verify Valid Register Suite">Verify Valid Register Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
