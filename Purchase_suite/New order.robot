@@ -20,8 +20,7 @@ TC4
 
 TC2
      Click Element    xpath=//span[text()="Product Range"]
-     Click Element    partial link=Steelware
-     Click Element    partial link=//a[contains(text(),'Dinner Set 36 Pcs. (Square)')]
-     Click Element    id=attribute93
-     Select From List By Label    id=attribute93     Red
-     Click Element    id=product-addtocart-button
+     Click Element    xpath=//img[@alt='Dinner Set 36 Pcs. (Square)']
+
+
+
